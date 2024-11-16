@@ -71,21 +71,21 @@ public class Main {
 
     }
 
-    private static void accessSelectAll() {
+    public static void accessSelectAll() {
         List<User> myUserList= dObject.getAllUsers();
         for(User user:myUserList){
             System.out.println(user);
         }
     }
 
-    private static void accessDelete() {
+    public static void accessDelete() {
         System.out.println("Enter the id of the user to delete");
         dObject.deleteUser(input.nextInt());
         System.out.println("After deletion");
         accessSelectAll();
     }
 
-    private static void accessUpdate() {
+    public static void accessUpdate() {
         System.out.println("this is the update method");
 
         System.out.println("Enter username:");
