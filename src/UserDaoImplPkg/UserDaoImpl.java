@@ -95,7 +95,6 @@ public class UserDaoImpl implements UserDao {
             pstmt.setString(5,user.getRole());
             pstmt.setInt(6,user.getUserId());
             pstmt.executeUpdate();
-
         }catch (SQLException e){
             e.printStackTrace();
         }

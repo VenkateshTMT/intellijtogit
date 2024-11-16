@@ -53,8 +53,8 @@ public class User {
         return password;
     }
 
-    public void setEmail(String password) {
-        this.password = password;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getAddress() {
@@ -91,8 +91,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "id:"+userId+"name:"+username+"Password:"+password
-                +"email:"+email+"address:"+address+"Role:"+role+"CreateDate:"+createDate+"lastLoginDate";
+        return "id: "+userId+" name: "+username+" Password: "+password
+                +"  email: "+email+" address:"+address+" Role: "+role+" CreateDate: "+createDate+" lastLoginDate: "+lastLoginDate;
 
     }
 }
